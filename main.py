@@ -7,6 +7,10 @@ from datetime import datetime, timedelta, time
 light = GrowLight()
 pump = FloodPump()
 
+# to start, turn on light if appropriate
+if 8 <= datetime.now().hour < 20:
+    light.turn_on()
+
 # instantiate scheduler
 s = Scheduler()
 

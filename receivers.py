@@ -39,10 +39,10 @@ class Actuator:
 class GrowLight(Actuator):
 
     def __init__(self):
-        super().__init__(pin_no=4, active_low=True)
+        super().__init__(pin_no=22, active_low=True)
 
 
 class FloodPump(Actuator):
 
     def __init__(self):
-        super().__init__(pin_no=14, active_low=True)
+        super().__init__(pin_no=27, active_low=True)
